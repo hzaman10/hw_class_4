@@ -64,7 +64,58 @@ def my_name(**name):
 
 my_name(f_name = "Shaira", l_name = "Tahsin")
     
+#---------------------------------------------
 
+print('Assignment -8')
+
+def my_add(**arg):
+    s = 0
+    for i in arg:
+        s = s + arg[i]
+    return s
+
+total = my_add(a=54,b=67,c=23,d=46,e=10,f=50)
+print('Sum is : ',total)
+
+#----------------------Calculator using Function-----------------------
+
+print('Assignment -9')
+
+def add(a,b):
+    return a+b
+    
+def sub(a,b):
+    return a-b
+    
+def multiplication(a,b):
+    return a*b  
+
+def division(a,b):
+    if b!=0:
+        return a/b
+    else:
+        return 0
+    
+x=int(input("Enter a value for x : "))
+y=int(input("Enter a value for y : "))
+
+z=input("Options are (+-*/ or x for exit) : ")
+while (z!=0):
+  if (z=='+'):
+    print(add(x,y))
+    
+  elif(z=='-'):
+    print(sub(x,y))
+  
+  elif(z=='*'):
+    print(multiplication(x,y))
+  
+  elif(z=='/'):
+    print(division(x,y))
+  
+  elif (z=='x'):
+    exit()
+  z=input("Options are (+-*/ or x for exit) : ")
 
 
 
